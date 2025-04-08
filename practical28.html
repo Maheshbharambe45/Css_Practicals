@@ -1,0 +1,45 @@
+<html> 
+<head> 
+<style>
+    body{
+        background-color: aqua;
+    }
+    input{
+        color: white;
+        background-color: black;
+        border-radius: 8px;
+    }
+</style>
+</head>
+<script> 
+function show()  { 
+alert("It is an alert Dialog box");  } 
+
+function show1()   
+{ 
+var con = confirm ("It is a confirm Dialog Box"); 
+if(con==true)   
+{ 
+document.write("User want to continue"); 
+}  
+else  { 
+    document.write("User does not want to continue");  
+} 
+}
+
+function show2()   
+{
+    var value=prompt("Enter your Name :","Enter your name"); 
+document.write("Your Name is : "+value);   
+} 
+ 
+</script> 
+</head> 
+<body> 
+<p style="color:blue">Dialog Boxes Example</p> 
+<p>Click the following Button</p> 
+<input type="button" value="Click Here" onClick="show()"/> 
+<input type="button" value="Click Here" onClick="show1()"/> 
+<input type="button" value="Click Here" onClick="show2()"/> 
+</body> 
+</html>

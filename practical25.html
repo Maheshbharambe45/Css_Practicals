@@ -1,0 +1,62 @@
+<html >
+<head>
+    <title>Number Validation</title>
+    <style>
+        body {
+            font-family:monospace;
+            margin: 50px;
+            background-color: azure;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        h1 {
+            color: blue;
+        }
+        label{
+            font-size: 20px;
+        }
+        input{
+            font-size: 20px;
+            padding: 2px;
+            border-radius: 10px;
+        }
+        button{
+            padding: 8px 10px;
+            border-radius: 18px;
+            background-color: burlywood;
+            color:maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Number Validation Program</h1>
+    <form onsubmit="return validateNumber()">
+        <label for="numberInput">Enter a Number:</label>
+        <input type="text" id="numberInput" required>
+        <br><br>
+        <span id="error-message" class="error"></span>
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validateNumber() {
+            var number = document.getElementById("numberInput").value;
+            var errorMessage = document.getElementById("error-message");
+            if (number === "" || isNaN(number)) {
+                errorMessage.textContent = "Please enter a valid number!";
+                return false;
+            } else {
+                errorMessage.textContent = "";
+                alert("Valid Number! Form Submitted Successfully.");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

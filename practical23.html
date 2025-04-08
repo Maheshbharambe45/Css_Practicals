@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <style>
+
+        h1 {
+            color: orange;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        button{
+            color: blue;
+            background-color: lightcyan;
+            padding: 6px 9px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Retype Password Validation</h1>
+    <form onsubmit="return validatePasswords()">
+        <label for="password">Password: </label>
+        <input type="password" id="password" required>
+        <br><br>
+        <label for="confirmPassword">Retype Password:</label>
+        <input type="password" id="confirmPassword" required>
+        <br><br>
+        <span id="error-message" class="error"></span>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+
+        function validatePasswords() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var errorMessage = document.getElementById("error-message");
+            if (password !== confirmPassword) {
+                errorMessage.textContent = "Passwords do not match!";
+                return false;
+            } else {
+                errorMessage.textContent = "";
+                alert("Password Matched! Form Submitted Successfully.");
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

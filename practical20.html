@@ -1,0 +1,30 @@
+<html >
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            color: tomato;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Square Root of the given Number</h1>
+    <input type="number" id="num" placeholder="Enter the Number">
+    <button onclick="calculate()">Find</button>
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            let num = document.getElementById("num").value;
+            document.getElementById("result").innerText = "Square Root :" + Math.sqrt(num);
+        } 
+    </script>
+</body>
+
+</html>

@@ -1,40 +1,42 @@
+Html code
 <html>
 <head>
-    <title>Different Font Styles</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lists Styling</title>
 </head>
 <body>
-    <h1>Paragraphs with Different Font Styles</h1>
-    <p class="font1">This paragraph uses the Arial font.</p>
-    <p class="font2">This paragraph uses the Times New Roman font.</p>
-    <p class="font3">This paragraph uses the Courier New font.</p>
-    <p class="font4">This paragraph uses the Comic Sans MS font.</p>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Car</li>
+        <li>Bike</li>
+        <li>Bus</li>
+    </ul>
 </body>
 </html>
 
-<!-- css code -->
-<!-- create css file add the following code into it -->
-
+Style.css code
 body {
+    background-color: lightgray;
     font-family: Arial, sans-serif;
-    background-color: lightblue;
-    text-align: center;
-    margin: 20px;
-}
 
-.font1 {
-    font-family: 'Arial', sans-serif;
+ol {
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px dashed black;
+    padding: 10px;
 }
-
-.font2 {
-    font-family: 'Times New Roman', serif;
-}
-
-.font3 {
-    font-family: 'Courier New', monospace;
-}
-
-.font4 {
-    font-family: 'Comic Sans MS', cursive;
+ul {
+    color: red;
+    font-style: italic;
+    font-size: 18px;
+    background-color: yellow;
+    padding: 10px;
 }

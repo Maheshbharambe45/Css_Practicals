@@ -1,118 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Frameset Example</title>
 </head>
-<body >
-    <h2>G H Raisoni College of Engineering and management, Jalgaon</h2>
-    <h3>Department of Computer Application</h3>
-    <h4>Class Time Table 2024-2025, Term 2</h4>
-<center><table>
-    <tr>
-        <th>Day/Time</th>
-        <th>09:45 AM to 10:45 AM</th>
-        <th>10:45 AM to 11:45 AM</th>
-        <th>11:45 AM to 12:45 PM</th>
-        <th>12:45 PM to 1:45 PM</th>
-        <th>1:45 PM to 2:45 PM</th>
-        <th>02:45 PM to 03:45 PM</th>
-        <th>03:45 AM to 4:45 PM</th>
-    </tr>
-
-    <tr>
-        <td class="color">Monday</td>
-        <td>Sub : RDBMS</td>
-        <td>Sub : RM</td>
-        <td>Sub : TCS</td>
-        <td>Sub : CSS 3</td>
-        <td class="no"></td>
-        <td> Library   </td>
-         <td>Hobby Club</td>
-    </tr>
-
-    <tr>
-        <td class="color">Tuesday</td>
-        <td>Sub : RM</td>
-        <td>Sub : Node JS</td>
-        <td>Sub : TCS</td>
-        <td>Sub : RDBMS</td> 
-        
-        <td class="no"></td>   
-       <td>Hobby Club</td>
-       <td>Hobby Club</td>
-    <tr>
-    <td class="color">Wedneday</td>
-        <td>Sub : Node Js</td>
-        <td>Sub : RM</td>
-        <td>Sub : TCS</td>
-        <td>Sub : RDBMS</td> 
-        <td class="no"></td>
-           
-        <td>Lab on RDBMS</td>
-        <td>Lab on Node JS</td>
+<frameset cols="20%,80%">
+    <frame src="nav.html" name="navFrame">
+    <frame src="home.html" name="contentFrame">
+</frameset>
+</html>
 
 
-    <tr>
-        <td class="color">Thursady</td>
-        <td class="no"></td>
-        <td>Sub : TCS</td>
-        <td>Sub : RM</td>
-        <td>Sub : RDBMS</td>
-        <td class="no"><center>Recess</center></td>
-        <td>Lab on RDBMS</td>
-        <td>Lab on javaScript</td>
-                    
-    </tr>
-    <tr>
-        <td class="color">Friday</td>
-        <td class="no"> </td>
-        <td>Sub : CSS 3</td>
-        <td>Lab on Node JS</td>
-        <td>Lab on RDBMS</td>
-        <td class="no"></td>
-        <td>Lab on javaScript</td>
-        <td>Lab on Javascript</td>
-                
-    </tr>
 
-    <tr>
-        <td class="color">Saturday</td>
-        <td>Lab ob javaScript</td>
-        <td>Lab on javaScript</td>
-        <td>Lab on Node JS/Javascript</td>
-        <td>Lab on RDBMS</td>   
-    </tr>
-</table>
-    </center>
+nav.html code
+<html>
+<head>
+    <title>Navigation</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style: none;
+            padding: 10px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+        a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html" target="contentFrame">Home</a></li>
+        <li><a href="about.html" target="contentFrame">About</a></li>
+        <li><a href="services.html" target="contentFrame">Services</a></li>
+        <li><a href="contact.html" target="contentFrame">Contact</a></li>
+    </ul>
 </body>
 </html>
 
-<!-- css code -->
-<!-- create css file add the following code into it -->
 
-body{
-    text-align: center;
-}
-table{
-    border: 1px solid black;
-}
-th{
-    background-color: #5c0f8b;
-    color: white;
-}    
-
-.color
-{
-    background-color: #5c0f8b;
-    color: white;
-}
-td{
-    background-color: yellow;
-}
-.no
-{
-    background-color: white;
-}
+    
+home.html code
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body { background-color: lightblue; font-family: Arial, sans-serif; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Home Page</h2>
+    <p>This is the home section of the website.</p>
+</body>
+</html>
